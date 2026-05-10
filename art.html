@@ -1,0 +1,307 @@
+<!-- Slideshow HTML code modified from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Jack Caron's Art Gallery</title>
+			<link id="theme" rel="stylesheet" type="text/css" href="css/lightMode.css" media="screen">
+			<script src="script.js"></script>
+			<meta charset="utf-8">
+		</head>
+		<body>
+			<header>
+			<h1>Jack Caron's Art Gallery</h1>
+				<button onClick="swapTheme('css/lightMode.css')">Light Mode</button> <button onClick="swapTheme('css/darkMode.css')">Dark Mode</button>
+				<br>
+				<input class="menu-chkbx" type="checkbox" id="menu-chkbx">
+				<label class="menu-burger" for="menu-chkbx">
+					<span class="hamburger"></span>
+				</label>
+				<nav class="menu">
+					<ul>
+						<li><a href="index.html">Home Page</a></li>
+						<li><a href="resume.html">Resume Page</a></li>
+						<li><a href="hobbies.html">Hobbies Page</a></li>
+						<li>(here)<a href="art.html">My Art Gallery</a></li>
+						<li><a href="aboutArt.html">About My Art</a></li>
+						<li><a href="aboutMe.html">About Me</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="sectionBorder">
+				<h2>Guide</h2>
+					<p>This page features some of my art. To view it, you can click on one of the arrows below to use the slideshow,
+						OR you can use click on one of the themes in the Table of Contents below to jump down to whichever one is most interesting</p>
+			</section>
+			<section class="sectionBorder">
+				<h2>Table of Contents</h2>
+					<button onclick="jumpToSonic()">Sonic</button> <button onclick="jumpToMarvel()">Marvel</button>
+					<button onclick="jumpToFNAF()">Five Nights at Freddy's</button> <button onclick="jumpToDeltarune()">Deltarune</button>
+					<button onclick="jumpToMario()">Super Mario</button>
+			</section>
+			
+			<section class="sectionBorder">
+				<h2>Slideshow!</h2>
+					<div class="slideshow-container">
+
+						<div class="mySlides fade">
+							<img src="Art/DeltaruneLancer.jpg" alt="Multiple line-art pencil drawings of Lancer from Deltarune with the word 'Lancer' in 
+							the bottom left corner of the page." style="width:50%; height:50%">
+						</div>
+
+						<div class="mySlides fade">
+							<img src="Art/DeltaruneSpamton.jpg" alt="Multiple line-art pencil drawings of Spamton from Deltarune. 
+							In the top right the word 'pipis!' is written, in the middle-right the words 'Spamton G. Spamton' are written, 
+							in the bottom right the phrase 'DON'T YOU WANT TO BE A [BIG SHOT]' is written in all caps, and in the bottom 
+							left the phrase '[HYPERLINK BLOCKED]' is written in all caps." style="width:50%; height:50%">
+						</div>
+
+						<div class="mySlides fade">
+							<img src="Art/FNAFMangle.jpg" alt="A singular line-art pencil drawing of The Mangle from Five Night's at Freddy's on the left with 
+							the words 'The Mangle' written in all caps at the top right and my signature in the bottom right of the page." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/FNAFToys.jpg" alt="A pencil drawing of Toy Freddy, Toy Bonnie, and Toy Chica preforming on stage from Five Night's at Freddy's 
+							with a banner that says 'Happy Birthday!' in call caps hanging in the back and my signature in the bottom right corner of the page." 
+							style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/FNAFWitheredBonnie.jpg" alt="A singular line-art pencil drawing of Withered Bonnie from Five Nights at Freddy's 
+							in the center of the page." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/FNAFWitheredChica.jpg" alt="A singular line-art pencil drawing of Withered Chica from Five Nights at Freddy's 
+							in the center of the page." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/FNAFWitheredFoxy.jpg" alt="A singular line-art pencil drawing of Withered Foxy from Five Nights at Freddy's on the 
+							right with the words 'Withered Foxy' written in the top left and my signature in the middle-left of the page." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/FNAFWitheredGoldenFreddy.jpg" alt="A singular line-art pencil drawing of Withered Golden Freddy from Five Nights at Freddy's 
+							in the center of the page with the phrase 'It's Me' written at the top of the page in all caps." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/MarvelCarnage.jpg" alt="A singular line-art pencil drawing of Carnage from Marvel Comics 
+							in the center of the page with the word 'Carnage' written at the top of the page." style="width:50%; height:50%">
+						</div>
+			
+						<div class="mySlides fade">
+							<img src="Art/MarvelDoctorOctopus.jpg" alt="A singular line-art pencil drawing of Doctor Octopus from Marvel Comics 
+							in the center of the page with the words 'Doctor Octopus' written at the top of the page." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/MarvelGambit.jpg" alt="A singular line-art pencil drawing of Gambit from Marvel Comics 
+							in the center of the page with the word 'Gambit' written at the top of the page and my signature in the middle-left of the page." 
+							style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/MarvelIronMan.jpg" alt="A singular line-art pencil drawing of Iron Man from Marvel Comics landing on a platform
+							in the center of the page with the words 'Iron Man' written at the top of the page in all caps." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/MarvelVenom.jpg" alt="A singular line-art pencil drawing of Venom from Marvel Comics 
+							in the center of the page with the word 'Venom' written at the top of the page." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/STHDrEggman.jpg" alt="Multiple line-art pencil drawings of Doctor Eggman from Sonic the Hedgehog with the words 'Dr Eggman' in 
+							the bottom right corner of the page and a speech bubble in the top right of the page saying 'oh-ho-ho!! Looking for this Sonic?!' while Eggman 
+							holds a Chaos Emerald." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/STHHyperSonic.jpg" alt="Colored pencil drawing of Hyper Sonic from Sonic the Hedgehog floating in space with his arms crossed 
+							and colorful sparks of energy surround. In the bottom right corner of the page the words 'Hyper Sonic' are written in all caps with my signature
+							right underneath." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/STHMetalSonic1.jpg" alt="Pencil line art drawing of Metal Sonic from Sonic the Hedgehog holding a Time Stone with the words 
+							'Metal Sonic' written across the page behind him in all caps and my signature in the bottom-middle of the page." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/STHMetalSonic2.jpg" alt="Painting of Metal Sonic from Sonic the Hedgehog hovering over a bunch of rocks with a Chaos Emerald, 
+							while surrounded by smoke. The word 'metal' is written in the top left of the page and the word 'sonic' in the top right of the page with 
+							both being in all caps. The bottom left of the page has my signature written." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/STHMetalSonic3.jpg" alt="Multiple line-art pencil drawings of Metal Sonic from Sonic the Hedgehog. The top half the page features 
+							two drawings of Metal Sonic in his base form with the words 'Metal Sonic' in the top right of the page in all caps. The bottom half features 
+							two drawings of Metal Sonic in his 'Neo Metal Sonic' form with the words 'Neo Metal Sonic' written on the middle-left of the page in all caps." 
+							style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/STHMetalSonic4.jpg" alt="A pencil line-art drawing of Metal Sonic from Sonic the Hedgehog with the words 'Metal Sonic' written 
+							across the top of the page in all caps in the style of a digital alarm clock and my signature in the middle-right of the page." 
+							style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/STHSilver.jpg" alt="A pencil line-art drawing of Silver the Hedgehog from Sonic the Hedgehog on the left side of the page with 
+							the words 'Silver the Hedgehog' written in the middle-right side of the page with my signature right beneath it." style="width:50%; height:50%">
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Art/SuperMarioBros.jpg" alt="A pencil line-art drawing of Mario and Luigi from Super Mario Bros in the top half of the page, with 
+							the words 'Super Mario Bros.' written on the bottom half of the page." style="width:50%; height:50%">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<br>
+
+					<div style="text-align:center">
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+			</section>
+			
+			<section class="sectionBorder">
+				<h2 id="sonic">Sonic the Hedgehog Artwork</h2>
+					<img src="Art/STHDrEggman.jpg" alt="Multiple line-art pencil drawings of Doctor Eggman from Sonic the Hedgehog with the words 'Dr Eggman' in 
+					the bottom right corner of the page and a speech bubble in the top right of the page saying 'oh-ho-ho!! Looking for this Sonic?!' while Eggman 
+					holds a Chaos Emerald." style="width:50%; height:50%" class="pictureFrame" >
+					<p class="imgDesc">Line art of Dr. Eggman from Sonic the Hedgehog.</p>
+					
+					<img src="Art/STHHyperSonic.jpg" alt="Colored pencil drawing of Hyper Sonic from Sonic the Hedgehog floating in space with his arms crossed 
+					and colorful sparks of energy surround. In the bottom right corner of the page the words 'Hyper Sonic' are written in all caps with my signature
+					right underneath." style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Full colored art of Hyper Sonic from Sonic the Hedgehog.</p>
+					
+					<img src="Art/STHMetalSonic1.jpg" alt="Pencil line art drawing of Metal Sonic from Sonic the Hedgehog holding a Time Stone with the words 
+					'Metal Sonic' written across the page behind him in all caps and my signature in the bottom-middle of the page." 
+					style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of Metal Sonic from Sonic the Hedgehog.</p>
+					
+					<img src="Art/STHMetalSonic2.jpg" alt="Painting of Metal Sonic from Sonic the Hedgehog hovering over a bunch of rocks with a Chaos Emerald, 
+					while surrounded by smoke. The word 'metal' is written in the top left of the page and the word 'sonic' in the top right of the page with 
+					both being in all caps. The bottom left of the page has my signature written." style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Painting of Metal Sonic from Sonic the Hedgehog.</p>
+					
+					<img src="Art/STHMetalSonic3.jpg" alt="Multiple line-art pencil drawings of Metal Sonic from Sonic the Hedgehog. The top half the page features 
+					two drawings of Metal Sonic in his base form with the words 'Metal Sonic' in the top right of the page in all caps. The bottom half features 
+					two drawings of Metal Sonic in his 'Neo Metal Sonic' form with the words 'Neo Metal Sonic' written on the middle-left of the page in all caps." 
+					style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of Metal Sonic and his Neo form from Sonic the Hedgehog.</p>
+					
+					<img src="Art/STHMetalSonic4.jpg" alt="A pencil line-art drawing of Metal Sonic from Sonic the Hedgehog with the words 'Metal Sonic' written 
+					across the top of the page in all caps in the style of a digital alarm clock and my signature in the middle-right of the page." 
+					style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of Metal Sonic from Sonic the Hedgehog.</p>
+					
+					<img src="Art/STHSilver.jpg" alt="A pencil line-art drawing of Silver the Hedgehog from Sonic the Hedgehog on the left side of the page with 
+					the words 'Silver the Hedgehog' written in the middle-right side of the page with my signature right beneath it." 
+					style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of Silver the Hedgehog from Sonic the Hedgehog.</p>
+			</section>
+					
+			<section class="sectionBorder">
+				<h2 id="marvel">Marvel Comics Artwork</h2>
+					<img src="Art/MarvelCarnage.jpg" alt="A singular line-art pencil drawing of Carnage from Marvel Comics 
+					in the center of the page with the word 'Carnage' written at the top of the page." style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of Carnage from Marvel Comics.</p>
+					
+					<img src="Art/MarvelDoctorOctopus.jpg" alt="A singular line-art pencil drawing of Doctor Octopus from Marvel Comics 
+					in the center of the page with the words 'Doctor Octopus' written at the top of the page." style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of Doctor Octopus from Marvel Comics.</p>
+					
+					<img src="Art/MarvelGambit.jpg" alt="A singular line-art pencil drawing of Gambit from Marvel Comics 
+					in the center of the page with the word 'Gambit' written at the top of the page and my signature in the middle-left of the page." 
+					style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc"> Line art of Gambit from Marvel Comics.</p>
+					
+					<img src="Art/MarvelIronMan.jpg" alt="A singular line-art pencil drawing of Iron Man from Marvel Comics landing on a platform
+					in the center of the page with the words 'Iron Man' written at the top of the page in all caps." style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc"> Line art of Iron Man from Marvel Comics.</p>
+					
+					<img src="Art/MarvelVenom.jpg" alt="A singular line-art pencil drawing of Venom from Marvel Comics 
+					in the center of the page with the word 'Venom' written at the top of the page." style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc"> Line art of Venom from Marvel Comics</p>
+			</section>
+					
+			<section class="sectionBorder">
+				<h2 id="fnaf">Five Nights at Freddy's Artwork</h2>
+					<img src="Art/FNAFMangle.jpg" alt="A singular line-art pencil drawing of The Mangle from Five Night's at Freddy's on the left with 
+					the words 'The Mangle' written in all caps at the top right and my signature in the bottom right of the page." style="width:50%; 
+					height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of The Mangle from Five Nights at Freddy's.</p>
+					
+					<img src="Art/FNAFToys.jpg" alt="A pencil drawing of Toy Freddy, Toy Bonnie, and Toy Chica preforming on stage from Five Night's at Freddy's 
+					with a banner that says 'Happy Birthday!' in call caps hanging in the back and my signature in the bottom right corner of the page." style="width:50%; 
+					height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of The Toy Animatronics (Toy Freddy, Toy Bonnie, and Toy Chica) on stage from Five Nights at Freddy's.</p>
+					
+					<img src="Art/FNAFWitheredBonnie.jpg" alt="A singular line-art pencil drawing of Withered Bonnie from Five Nights at Freddy's 
+					in the center of the page." style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of Withered Bonnie from Five Nights at Freddy's.</p>
+					
+					<img src="Art/FNAFWitheredChica.jpg" alt="A singular line-art pencil drawing of Withered Chica from Five Nights at Freddy's 
+					in the center of the page." style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of Withered Chica from Five Nights at Freddy's.</p>
+					
+					<img src="Art/FNAFWitheredFoxy.jpg" alt="A singular line-art pencil drawing of Withered Foxy from Five Nights at Freddy's on the 
+					right with the words 'Withered Foxy' written in the top left and my signature in the middle-left of the page." style="width:50%; height:50%" 
+					class="pictureFrame">
+					<p class="imgDesc">Line art of Withered Foxy from Five Nights at Freddy's.</p>
+					
+					<img src="Art/FNAFWitheredGoldenFreddy.jpg" alt="A singular line-art pencil drawing of Withered Golden Freddy from Five Nights at Freddy's 
+					in the center of the page with the phrase 'It's Me' written at the top of the page in all caps." style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of Withered Golden Freddy from Five Nights at Freddy's.</p>
+			</section>
+					
+			<section class="sectionBorder">
+				<h2 id="deltarune">Deltarune Artwork</h2>
+					<img src="Art/DeltaruneLancer.jpg" alt= "Multiple line-art pencil drawings of Lancer from Deltarune with the word 'Lancer' in 
+					the bottom left corner." style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of Lancer from Deltarune</p>
+					
+					<img src="Art/DeltaruneSpamton.jpg" alt="Multiple line-art pencil drawings of Spamton from Deltarune. 
+					In the top right the word 'pipis!' is written, in the middle-right the words 'Spamton G. Spamton' are written, 
+					in the bottom right the phrase 'DON'T YOU WANT TO BE A [BIG SHOT]' is written in all caps, and in the bottom 
+					left the phrase '[HYPERLINK BLOCKED]' is written in all caps." style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of Spamton from Deltarune</p>
+			</section>
+					
+			<section class="sectionBorder">
+				<h2 id="mario">Super Mario Artwork</h2>
+					<img src="Art/SuperMarioBros.jpg" alt="A pencil line-art drawing of Mario and Luigi from Super Mario Bros in the top half of the page, with 
+					the words 'Super Mario Bros.' written on the bottom half of the page."  style="width:50%; height:50%" class="pictureFrame">
+					<p class="imgDesc">Line art of the Super Mario Brothers (Mario and Luigi) from the Super Mario series.</p>
+			</section>
+			<footer>
+				<p>contact at jackcaron06@gmail.com<p>
+			</footer>
+		</body>
+	</html>
